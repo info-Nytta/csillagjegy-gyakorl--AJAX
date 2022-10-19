@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='hu'>
+<head>
+	<meta charset='utf-8' />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+	<link rel='stylesheet' href='./css/style.css' />
+	<script src='js/script.js'></script>
+	<title>Csillagjegyek</title>
+</head>
+
+<body>
+<div class='full'>
+	<header>
+		<img style='height:100px;float:left' src='./img/logo.png' />
+		<h3 style="text-align:right">Csillagjegyek</h3>
+	</header>
+	<nav>
+		<script>	
+				jegyek=["Kos","Bika","Ikrek","Rák","Oroszlán","Szűz","Mérleg","Skorpió","Nyilas","Vízöntő","Bak","Halak"];
+				for (i=0;i<jegyek.length; i++) {
+					document.write(" <span class='a' onclick='jegyleker(\"jegy="+(i+1)+"\")'>"+jegyek[i]+"</span> ");
+				}
+		</script>
+	</nav>
+	<main>
+		<div id="reszletek">
+			<h2>Jegy</h2>
+			<p>Képek és jellemz
+		</div>
+		<script>jegyleker("ho="+ho+"&nap="+nap);</script>
+	</main>
+	<footer>
+		<div id='design' style='font-size:80%;text-align:center;font-style:italic;font-family:Serif;margin:25px auto;'>
+			design and programming by <a href='https://nytta.hu' target='_blank'>Nytta</a> 
+			<script>d=new Date(); document.write(d.getFullYear())</script>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
